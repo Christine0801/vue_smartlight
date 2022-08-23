@@ -69,7 +69,7 @@
             <span>验证码</span>
           </el-col>
           <el-col :span="20" class="form-control">
-            <button>登录系统</button>
+            <button @click="login">登录系统</button>
           </el-col>
         </el-row>
       </el-col>
@@ -136,6 +136,9 @@ export default {
     },
     brandAnimate() {
       this.brandLeft = !this.brandLeft
+    },
+    login() {
+      this.$router.replace('/main')
     }
   },
   computed: {

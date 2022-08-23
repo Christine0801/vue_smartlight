@@ -1,10 +1,10 @@
 <template>
-<h1>首页</h1>
+<h1>集中器管理</h1>
 </template>
 
 <script>
 export default {
-  name: "Home"
+  name: "ConcentratorManage"
 }
 </script>
 

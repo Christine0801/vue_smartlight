@@ -1,10 +1,12 @@
 <template>
-<h1>首页</h1>
+<div class="tabs">
+
+</div>
 </template>
 
 <script>
 export default {
-  name: "Home"
+  name: "CommonTabs"
 }
 </script>
 

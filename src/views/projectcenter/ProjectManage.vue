@@ -1,10 +1,10 @@
 <template>
-<h1>首页</h1>
+<h1>项目管理</h1>
 </template>
 
 <script>
 export default {
-  name: "Home"
+  name: "ProjectManage"
 }
 </script>
 
