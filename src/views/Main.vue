@@ -9,6 +9,7 @@
         <common-header></common-header>
       </el-header>
       <el-main>
+        <common-tabs></common-tabs>
         <router-view></router-view>
       </el-main>
     </el-container>
@@ -19,11 +20,14 @@
 <script>
 import CommonAside from "@/components/common/CommonAside";
 import CommonHeader from "@/components/common/CommonHeader";
+import CommonTabs from "@/components/common/CommonTabs";
+
 export default {
   name: "Main",
   components: {
     CommonAside,
     CommonHeader,
+    CommonTabs,
   },
   created() {
     this.$router.replace('/main/home').catch(err => {})

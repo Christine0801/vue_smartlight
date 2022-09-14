@@ -72,9 +72,10 @@
             <button @click="login">登录系统</button>
           </el-col>
         </el-row>
+
       </el-col>
       <el-col :span="12" class="right">
-        <img :src="imgUrl" alt="">
+        <img src="@/assets/img/bg_1.webp" alt="">
       </el-col>
     </el-row>
   </div>
@@ -86,7 +87,8 @@ export default {
   name: "Login",
   data() {
     return {
-      imgUrl: require('@/assets/img/bg_1.webp'),
+      isgt:false,
+      validator: false,
       controlUsername: {
         text: false,
         border: false,
@@ -226,7 +228,7 @@ export default {
       left: 50%;
       transform: translate(-50%, -35%);
       width: 800px;
-      height: 400px;
+      height: 500px;
       background-color: #fff;
       box-shadow: 5px 5px 5px rgba(0, 0, 0, .3);
       .left,
@@ -318,6 +320,14 @@ export default {
               }
             }
 
+          }
+          .captcha-div {
+            position: relative;
+            display: flex;
+            align-items: center;
+            width: 90%;
+            height: 60px;
+            justify-content: center;
           }
         }
       }

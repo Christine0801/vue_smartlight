@@ -5,7 +5,8 @@
            :collapse="isCollapse"
            background-color="#333"
            :unique-opened="true"
-           text-color="white"
+           text-color="#ffffff"
+           active-text-color="#ffffff"
   >
     <el-menu-item>
       <i class="el-icon-menu"></i>
@@ -149,6 +150,9 @@ export default {
     },
     toPath(item) {
       this.$router.replace(item.path).catch(err => {})
+      this.$store.commit('addTab',item)
+      this.$store.commit('changeTabMask', item)
+      console.log(typeof item);
     }
   }
 }
